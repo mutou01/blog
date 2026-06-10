@@ -1,0 +1,95 @@
+{
+  "date": "2026-06-10",
+  "today_highlights": [
+    {
+      "name": "fastmcp",
+      "url": "https://github.com/punkpeye/fastmcp",
+      "project_intro": "一个面向 TypeScript 生态的 MCP server 开发框架，试图把 server 构建从零散工具脚本推进到更稳定的工程抽象层。",
+      "what_happened": "仓库在 2026-06-10 仍有更新，约 3183 Star；topics 虽然很短，但直接落在 mcp 和 sse 上，说明社区开始把“MCP server 作者体验”当成独立问题，而不只是顺手暴露几个 tool。",
+      "why_it_matters": "对后端和 Agent 实践者来说，MCP 生态一旦扩张，真正的瓶颈就不再是会不会实现协议，而是 schema、transport、生命周期、调试和部署的一致性。框架层开始冒出来，意味着协议已经在走向工程化。",
+      "what_i_can_learn": "可以学习 MCP server 该如何做类型化接口、传输层解耦、测试封装和部署约束，也可以借它反推一个成熟协议生态为什么最终总会长出自己的脚手架和框架层。"
+    },
+    {
+      "name": "OpenLore",
+      "url": "https://github.com/clay-good/OpenLore",
+      "project_intro": "一个把代码库转成可查询知识图谱的架构记忆层，并通过 graph-native MCP tools 把静态分析、living specs 和 drift detection 直接暴露给 coding agent。",
+      "what_happened": "仓库在 2026-06-10 继续更新，虽然约 163 Star 还很早期，但描述里把 static analysis、living specs、drift detection、knowledge graph 和 token cost reduction 明确绑在了一起，方向非常完整。",
+      "why_it_matters": "很多 coding agent 现在最大的问题不是工具不够多，而是上下文会衰减，架构约束会漂移，系统很快忘记代码库真实结构。这个项目值得关注，因为它在尝试把“架构记忆”做成长期存在的后端能力，而不只是临时检索层。",
+      "what_i_can_learn": "可以学习静态分析、知识图谱、规范文档和 MCP 接口如何协同，也可以反思自己的代码 Agent 是否只有向量检索，却没有真正可持续的架构语义层。"
+    },
+    {
+      "name": "TensorRT-LLM",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM",
+      "project_intro": "NVIDIA 的大模型推理运行时与工具链，既提供模型定义入口，也提供 Python 和 C++ 运行时组件来编排高性能推理执行。",
+      "what_happened": "仓库在 2026-06-10 仍有更新，约 1.38 万 Star；候选描述不只强调单点优化，而是明确提到 easy-to-use API、state-of-the-art optimizations 和 runtime orchestration，说明它瞄准的是完整推理服务栈。",
+      "why_it_matters": "对后端和 Agent 团队来说，真正的成本和延迟压力最终都落在推理服务层。模型效果再好，如果吞吐、显存占用和服务稳定性撑不住，产品就很难落地。这个项目代表推理优化已经不再是实验技巧，而是正式的基础设施能力。",
+      "what_i_can_learn": "可以学习模型定义、推理优化和运行时编排为什么应该被产品化成一条统一管线，也可以借它重新思考 Python 控制面和 C++ 执行面的职责应该怎样切分。"
+    },
+    {
+      "name": "ragent",
+      "url": "https://github.com/nageoffer/ragent",
+      "project_intro": "一个面向真实业务场景的企业级 Agentic RAG 工程实现，覆盖文档解析、多路检索、意图识别、问题重写、会话记忆、MCP 工具调用与深度思考链路。",
+      "what_happened": "仓库在 2026-06-10 仍有更新，约 2643 Star；描述和 topics 都很明确地落在 agentic-rag、mcp、springai 和 full-chain implementation 上，说明它不是演示型聊天壳，而是在做可落地的业务系统拼装。",
+      "why_it_matters": "很多后端团队做 RAG 时真正卡住的并不是向量库，而是文档处理、召回路由、会话状态、工具调用和业务规则怎样接成一条稳定链路。这个项目的价值在于它把这些常见痛点放在同一个工程上下文里。",
+      "what_i_can_learn": "可以学习企业级 RAG 为什么必须拆开解析、检索、改写、记忆和工具层，也可以观察 Java 和 Spring AI 技术栈如何承载一套更接近真实业务系统的 Agent 后端。"
+    },
+    {
+      "name": "AgenticX",
+      "url": "https://github.com/DemonDamon/AgenticX",
+      "project_intro": "一个试图把 Python SDK、CLI、Studio server 和桌面宿主一起打包的多 Agent 平台，核心卖点是 Meta-Agent orchestration、MCP Hub、分层记忆、安全 sandbox 和 IM gateway。",
+      "what_happened": "仓库在 2026-06-10 继续更新，虽然约 144 Star 还很新，但候选描述给出的功能面异常完整，已经覆盖多模型接入、工具中心、记忆体系、群聊入口和安全隔离，明显不是单一 agent demo。",
+      "why_it_matters": "这类项目值得后端和 Agent 开发者关注，因为它展示了一个“生产可交付”的多 Agent 平台清单如今长什么样。真正上线后，大家比拼的不只是 prompt，而是控制面、宿主面、工具面和安全面的整合能力。",
+      "what_i_can_learn": "可以从中学习多 Agent 平台如何拆分 SDK、CLI、服务端和宿主界面，也可以反推记忆、工具、权限和消息入口为什么会逐渐收敛成同一个平台控制面问题。"
+    }
+  ],
+  "breakout_high_star_projects": [
+    {
+      "name": "browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "project_intro": "一个把网站操作能力标准化给 AI agents 使用的高热度浏览器自动化层，核心目标不是写脚本，而是让网页本身变成可被 Agent 消费的执行界面。",
+      "what_happened": "仓库在 2026-06-10 仍有更新，约 9.8 万 Star；topics 同时覆盖 ai-agents、browser-automation、playwright 和 llm，热度已经远远超出小众实验项目的范围。",
+      "why_it_matters": "它虽然更偏执行层，但后端和 Agent 开发者必须关注，因为很多业务系统并没有干净 API，浏览器正在重新变成一种通用集成表面。只要进入 computer-use 场景，权限、会话、重试、录制回放和失败恢复都会变成后端工程问题。",
+      "what_i_can_learn": "可以学习浏览器为什么会成为 Agent 的外部执行 runtime，也可以观察网页自动化怎样从测试脚本演化成可复用的工具接口和工作流节点。"
+    },
+    {
+      "name": "langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "project_intro": "一个已经从开发库演进为生态协调层的高 Star Agent engineering platform，如今更像是在定义社区默认接受的 agent 抽象集合。",
+      "what_happened": "仓库在 2026-06-10 继续更新，约 13.89 万 Star；描述已经压缩成“The agent engineering platform.”，而 topics 则同时覆盖 agents、multiagent、langgraph、enterprise 和跨模型生态，说明它在强调平台身份而不是单个库特性。",
+      "why_it_matters": "即便你不直接采用它，也应该关注它，因为这类超高 Star 项目往往最早沉淀行业共识。什么算默认的 agent primitive，工作流如何组织，类型约束和跨模型兼容怎样表达，最后都会先在这种生态协调层里出现。",
+      "what_i_can_learn": "可以借它观察哪些抽象已经从“框架风格”变成“行业默认接口”，也可以反推一个成熟 Agent 生态为什么会逐渐从 helper library 演化成平台和规范的集合。"
+    }
+  ],
+  "other_worth_a_look": [
+    {
+      "name": "akb",
+      "url": "https://github.com/dnotitia/akb",
+      "note": "把组织级知识库做成 URI graph 加 MCP 服务，并明确落到 Postgres 与 pgvector 上，适合关注多租户 Agent 记忆层该怎样从 demo 走向真正后端系统。"
+    },
+    {
+      "name": "docker-ai-stack",
+      "url": "https://github.com/hwdsl2/docker-ai-stack",
+      "note": "一条命令打包 Ollama、LiteLLM、Embeddings、AnythingLLM 和 MCP Gateway，很适合观察自托管 AI 栈怎样被收敛成可部署的运维单元。"
+    },
+    {
+      "name": "altimate-code",
+      "url": "https://github.com/AltimateAI/altimate-code",
+      "note": "把 dbt、SQL 和云数仓接进 agentic data engineering harness，值得关注数据工程链路怎样被改造成可被 Agent 调度的后端工具面。"
+    },
+    {
+      "name": "DocsGPT",
+      "url": "https://github.com/arc53/DocsGPT",
+      "note": "Private AI、enterprise search、document analysis 和 agent builder 被打包到同一平台里，适合观察企业知识入口层怎样继续产品化。"
+    },
+    {
+      "name": "datamodel-code-generator",
+      "url": "https://github.com/koxudaxi/datamodel-code-generator",
+      "note": "从 OpenAPI、JSON Schema 和 GraphQL 自动生成 Pydantic 等数据模型，这对工具 schema、接口契约和类型化 Agent 工具层都很实用。"
+    },
+    {
+      "name": "vllm-omni",
+      "url": "https://github.com/vllm-project/vllm-omni",
+      "note": "多模态推理框架开始直接强调 efficient model inference，值得继续盯它会不会推动音频、图像和视频服务栈向统一推理底座收敛。"
+    }
+  ]
+}
